@@ -47,8 +47,29 @@ int main()
     double _score;
 
     //prompts
+    std::cout << "Please enter your Details below: \n";
+    
+    std::cout << "Id";
+    std::cin >> _id;
+    std::cout << "FirstName: ";
+    std::cin >> fName;
+    std::cout << "Surname: ";
+    std::cin >> lName;
+    std::cout << "Score";
+    std::cin >> _score;
+    std::cout << "Grade";
+    std::cin >> grade;
 
-    std::cout << "Hello there!";
+    //setting up variables 
+    stud1.setId(_id);
+    stud1.setFirstName(fName);
+    stud1.setLastName(lName);
+    stud1.setScore(_score);
+    stud1.setCourseGrade(grade);
+
+    //Console output
+
+
     return 0;
 }
 
