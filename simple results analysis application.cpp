@@ -48,17 +48,17 @@ int main()
 
     //prompts
     std::cout << "Please enter your Details below: \n";
-    
-    std::cout << "Id";
+    std::cout << "Id: ";
     std::cin >> _id;
     std::cout << "FirstName: ";
     std::cin >> fName;
     std::cout << "Surname: ";
     std::cin >> lName;
-    std::cout << "Score";
+    std::cout << "Score: ";
     std::cin >> _score;
-    std::cout << "Grade";
+    std::cout << "Grade: ";
     std::cin >> grade;
+    std::cout << std::endl;
 
     //setting up variables 
     stud1.setId(_id);
@@ -68,8 +68,15 @@ int main()
     stud1.setCourseGrade(grade);
 
     //Console output
+    std::cout << "******************************************************"<<std::endl;
+    std::cout << "\t Here is your registered student" << std::endl;
+    std::cout << "******************************************************" << std::endl;
 
-
+    std::cout << "Student ID: " << stud1.getId() << std::endl;
+    std::cout << "First Name: " << stud1.getFirstName() << std::endl;
+    std::cout << "Last Name: " << stud1.getLastName() << std::endl;
+    std::cout << "Score: " << stud1.getScore() << std::endl;
+    std::cout << "Course Grade: " << stud1.getCourseGrade() << std::endl;
     return 0;
 }
 
