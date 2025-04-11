@@ -47,7 +47,12 @@ int main()
     double _score;
 
     //prompts
-    std::cout << "Please enter your Details below: \n";
+	std::cout << "******************************************************" << std::endl;
+    std::cout << "\t Welcome to the Student Registration System" << std::endl;
+	std::cout << "******************************************************" << std::endl;
+	std::cout << "Please enter the following details: \n";
+	std::cout << "******************************************************" << std::endl;
+	std::cout << "New Student Details" << std::endl;
     std::cout << "Id: ";
     std::cin >> _id;
     std::cout << "FirstName: ";
