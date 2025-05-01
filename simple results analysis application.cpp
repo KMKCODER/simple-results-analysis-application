@@ -2,6 +2,12 @@
 //Author: Kapembwa Kangali
 // next I have to intrduce files
 #include <iostream>
+#include <string>
+#include <iomanip> //for std::setprecision
+#include <cstdlib> //for system("cls") and system("pause")
+#include <fstream> //for file operations
+
+
 
 class Student {
 private:
