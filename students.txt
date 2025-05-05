@@ -1,0 +1,5 @@
+Student ID: 2
+First Name: Kap
+Last Name: Kang
+Score: 34
+Course Grade: A

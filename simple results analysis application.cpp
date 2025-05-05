@@ -45,6 +45,10 @@ int main()
 {
     Student stud1; //object 1
 
+    //File variable
+    std::fstream dataFile;
+
+
     //local var
     int _id;
     std::string fName;
@@ -54,7 +58,7 @@ int main()
 
     //prompts
 	std::cout << "******************************************************" << std::endl;
-    std::cout << "\t Welcome to the Student Registration System" << std::endl;
+    std::cout << "\t WELCOME TO THE STUDENT REGISTRATION SYSTEM" << std::endl;
 	std::cout << "******************************************************" << std::endl;
 	std::cout << "Please enter the following details: \n";
 	std::cout << "******************************************************" << std::endl;
@@ -88,6 +92,20 @@ int main()
     std::cout << "Last Name: " << stud1.getLastName() << std::endl;
     std::cout << "Score: " << stud1.getScore() << std::endl;
     std::cout << "Course Grade: " << stud1.getCourseGrade() << std::endl;
+
+    //storage on a text file
+    std::cout << "Opening File" << std::endl;
+    dataFile.open("students.txt", std::ios::out); // Open for output
+
+    dataFile << "Student ID: " << stud1.getId() << std::endl;
+    dataFile << "First Name: " << stud1.getFirstName() << std::endl;
+    dataFile << "Last Name: " << stud1.getLastName() << std::endl;
+    dataFile << "Score: " << stud1.getScore() << std::endl;
+    dataFile << "Course Grade: " << stud1.getCourseGrade() << std::endl;
+
+    std::cout << "Written to text file named: student.txt" << std::endl;
+
+
     return 0;
 }
 
